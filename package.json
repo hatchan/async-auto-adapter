@@ -1,0 +1,24 @@
+{
+  "name": "async-auto-adapter",
+  "version": "0.0.1",
+  "description": "A simple adapter for a cleaner interface to async.auto",
+  "main": "index.js",
+  "scripts": {
+    "test": "buster test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hatchan/async-auto-adapter.git"
+  },
+  "keywords": [
+    "async"
+  ],
+  "author": "hatchan",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "buster": "~0.6.12",
+    "buster-test": "~0.6.1",
+    "jshint": "~1.1.0"
+  }
+}
