@@ -1,9 +1,17 @@
 var config = module.exports;
 
-config["node specs"] = {
+var config = exports; // Vanity
+
+config["Browser tests"] = {
+    environment: "browser",
     rootPath: "../",
-    environment: "node",
+    sources: ["lib/async-auto-adapter.js"],
     tests: [
         "spec/**/*-specs.js"
     ]
+};
+
+config["Server tests"] = {
+    extends: "Browser tests",
+    environment: "node"
 };

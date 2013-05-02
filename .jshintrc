@@ -6,7 +6,7 @@
 
 
     // Predefined globals whom JSHint will ignore.
-    "browser"       : false,   // Standard browser globals e.g. `window`, `document`.
+    "browser"       : true,   // Standard browser globals e.g. `window`, `document`.
 
     "couch"         : false,
     "dojo"          : false,
@@ -24,7 +24,8 @@
         "describe",
         "expect",
         "it",
-        "itEventually"
+        "itEventually",
+        "define"
     ],
 
     "indent"        : 4,
