@@ -34,19 +34,19 @@ var spec = describe("async-auto-adapter", function(){
             this.result = adapter(this.dependency, this.callback);
         });
 
-        itEventually("the result should be a array", function() {
+        it("the result should be a array", function() {
             expect(underscore.isArray(this.result)).toEqual(true);
         });
 
-        itEventually("the results should contain 2 items", function() {
+        it("the results should contain 2 items", function() {
             expect(this.result.length).toEqual(2);
         });
 
-        itEventually("the result should contain a single dependency as the first item", function() {
+        it("the result should contain a single dependency as the first item", function() {
             expect(this.result[0]).toEqual(this.dependency);
         });
 
-        itEventually("the result should contain the function as a callback as the last item", function() {
+        it("the result should contain the function as a callback as the last item", function() {
             expect(this.result[1]).toEqual(this.callback);
         });
     });
