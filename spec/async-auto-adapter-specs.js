@@ -14,15 +14,15 @@ var spec = describe("async-auto-adapter", function(){
             this.result = adapter(this.callback);
         });
 
-        itEventually("the result should be a array", function() {
+        it("the result should be a array", function() {
             expect(underscore.isArray(this.result)).toEqual(true);
         });
 
-        itEventually("the results should contain 1 item", function() {
+        it("the results should contain 1 item", function() {
             expect(this.result.length).toEqual(1);
         });
 
-        itEventually("the result should only contain the function as a callback", function() {
+        it("the result should only contain the function as a callback", function() {
             expect(this.result[0]).toEqual(this.callback);
         });
     });
