@@ -1,0 +1,6 @@
+box: ubuntu
+build:
+  steps:
+    - script:
+        name: env
+        code: env
